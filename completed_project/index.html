@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+
+    <title>Animate Webapp</title>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">Animate</a>
+            <div class="navbar-content">
+                <ul class="navbar-menu">
+                    <li><a href="#features" class="navbar-link">Features</a></li>
+                    <li><a href="#download" class="navbar-link">Download</a></li>
+                </ul>
+                <button class="feedback-button">Send Feedback</button>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Showcase your app beautifully.
+            </h1>
+            <p class="hero-subtitle">
+                Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!
+            </p>
+            <div class="download-buttons">
+                <a href="https://play.google.com/store" target="_blank">
+                    <img src="/img/img/google-play-badge.svg" alt="Get it on Google Play" class="store-badge">
+                </a>
+                <a href="https://www.apple.com/app-store/" target="_blank">
+                    <img src="/img/img/app-store-badge.svg" alt="Download on the App Store" class="store-badge">
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero Image Section with Video -->
+        <div class="hero-image">
+            <div class="circle-background"></div>
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="video-container">
+                <video muted autoplay preload="auto" loop>
+                    <source src="/img/img/demo-screen.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="phone-frame"></div>
+        </div>
+    </header>
+
+    <!--  Intuitive Solution Section -->
+    <section class="purple-linear-bg">
+        <h2>"An intuitive solution to a common problem br that we all face, wrapped up in a single app!"</h2>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <div class="hero-image">
+            <div class="circle-background-2"></div>
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="video-container">
+                <video muted autoplay preload="auto" loop>
+                    <source src="/img/img/demo-screen.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="phone-frame"></div>
+        </div>
+        <div>
+            <div class="features-container">
+                <div class="feature-item">
+                    <img class="feature-icon" src="/img/icons/phone.svg" alt="">
+                    <h3>Device Mockups</h3>
+                    <p>Ready to use HTML/CSS device mockups, no Photoshop required</p>
+                </div>
+                <div class="feature-item">
+                    <img class="feature-icon" src="/img/icons/camera.svg" alt="">
+                    <h3>Flexible Use</h3>
+                    <p>Put an image, video, animation, or anything else in the screen!</p>
+                </div>
+            </div>
+            <div class="features-container">
+                <div class="feature-item">
+                    <img class="feature-icon" src="/img/icons/gift.svg" alt="">
+                    <h3>Free to Use</h3>
+                    <p>As always, this theme is free to download and use for any purpose!</p>
+                </div>
+                <div class="feature-item">
+                    <img class="feature-icon" src="/img/icons/verified.svg" alt="">
+                    <h3>Open Source</h3>
+                    <p>Since this theme is MIT licensed, you can use it commercially!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Design Intro Section -->
+    <section class="web-design-intro">
+        <div>
+            <h2>Enter a new age of web design</h2>
+            <p>This section is perfect for featuring some information about your application, why it was built, the
+                problem
+                it solves, or anything else There's plenty of space for text here, so don't worry about writing too
+                much.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div>
+            <h2>Stop waiting. <br> Start building.</h2>
+            <button class="cta-button">Download for free</button>
+        </div>
+    </section>
+
+    <!--  Download Section -->
+    <section class="purple-linear-bg" id="download">
+        <h2>Get the app now!</h2>
+        <div class="download-buttons">
+            <a href="https://play.google.com/store" target="_blank">
+                <img src="/img/img/google-play-badge.svg" alt="Get it on Google Play" class="store-badge">
+            </a>
+            <a href="https://www.apple.com/app-store/" target="_blank">
+                <img src="/img/img/app-store-badge.svg" alt="Download on the App Store" class="store-badge">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Your Website 2023. All Rights Reserved.</p>
+        <p>Privacy · Terms · FAQ</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".navbar-content");
+
+            hamburger.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

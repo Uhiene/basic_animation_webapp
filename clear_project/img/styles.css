@@ -1,0 +1,26 @@
+/* Root Styling for Colors */
+:root {
+    --color-white: #fff;
+    --color-lightsteelblue: lightsteelblue;
+    --color-orangered: orangered;
+    --color-blue: #2937F0;
+    --color-black: #000;
+    --color-gray-dark: #252424;
+    --color-gray-light: #6C757D;
+    --color-background: #F8F9FA;
+    --color-hero-title: #212529;
+    --color-gradient-start: #4032EE;
+    --color-gradient-end: #941DE4;
+}
+
+h2 {
+    font-family: 'Newsreader', sans-serif;
+}
+
+button, a, h3 {
+    font-family: "Kanit", sans-serif;
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+}
